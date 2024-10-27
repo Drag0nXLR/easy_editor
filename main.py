@@ -126,8 +126,26 @@ class ImageProcessor:
             work_dir, self.save_dir, self.filename
         )
         self.showImage(image_path)
-    
+
     def sharpen(self):
+        """
+        Applies sharpening filter to the image.
+
+        Applies sharpening filter to the image, saves the modified image
+        and shows it.
+        """
+        # Applies sharpening filter
+        self.image = self.image.filter(SHARPEN)
+        # Saves an image
+        self.saveImage()
+        # Builds a path to the image
+        image_path = os.path.join(
+            work_dir, self.save_dir, self.filename
+        )
+        # Shows an image
+        self.showImage(image_path)
+    
+    def blur(self):
         self.image = self.image.filter(BLUR)
         self.saveImage()
         image_path = os.path.join(
@@ -156,6 +174,7 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     ui.papka.clicked.connect(show_file_name_dist)
     ui.rizkist.clicked.connect(workimage.sharpen)
+    ui.blur.clicked.connect(workimage.blur)
     ui.mirror.clicked.connect(workimage.do_flip)
     ui.left.clicked.connect(workimage.rotateLeft)
     ui.right.clicked.connect(workimage.rotateRight)

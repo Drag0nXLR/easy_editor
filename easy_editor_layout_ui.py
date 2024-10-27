@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'easy_editor_layout.ui'
+# Form implementation generated from reading ui file 'e:\py_projects\Logika_projects\easy_editor\easy_editor_layout.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,13 +14,14 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(630, 600)
+        MainWindow.resize(751, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 631, 601))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 750, 601))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.main_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.main_layout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
         self.main_layout.setContentsMargins(0, 0, 0, 0)
         self.main_layout.setObjectName("main_layout")
         self.files_layout = QtWidgets.QVBoxLayout()
@@ -75,13 +76,3 @@ class Ui_MainWindow(object):
         self.mirror.setText(_translate("MainWindow", "Дзеркало"))
         self.rizkist.setText(_translate("MainWindow", "Різкість"))
         self.black_white.setText(_translate("MainWindow", "Ч/Б"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
