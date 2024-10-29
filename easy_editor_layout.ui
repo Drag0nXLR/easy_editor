@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>751</width>
-    <height>600</height>
+    <width>891</width>
+    <height>731</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>750</width>
-      <height>601</height>
+      <width>891</width>
+      <height>731</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="main_layout">
@@ -51,48 +51,116 @@
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="buttons_layout">
-         <item>
-          <widget class="QPushButton" name="right">
-           <property name="text">
-            <string>вправо</string>
-           </property>
-          </widget>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="2" column="0">
+          <layout class="QHBoxLayout" name="buttons_layout1">
+           <item>
+            <widget class="QPushButton" name="left">
+             <property name="text">
+              <string>Вліво</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="right">
+             <property name="text">
+              <string>вправо</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="mirror">
+             <property name="text">
+              <string>Дзеркало</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="black_white">
+             <property name="text">
+              <string>Ч/Б</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Тиснення</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QPushButton" name="left">
-           <property name="text">
-            <string>Вліво</string>
-           </property>
-          </widget>
+         <item row="4" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="find_edges">
+             <property name="text">
+              <string>Знайти краї</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="smooth">
+             <property name="text">
+              <string>Згладження</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="rizkist">
+             <property name="text">
+              <string>Різкість</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="blur">
+             <property name="text">
+              <string>Розмити</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
-         <item>
-          <widget class="QPushButton" name="blur">
-           <property name="text">
-            <string>Розмити</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="mirror">
-           <property name="text">
-            <string>Дзеркало</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="rizkist">
-           <property name="text">
-            <string>Різкість</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="black_white">
-           <property name="text">
-            <string>Ч/Б</string>
-           </property>
-          </widget>
+         <item row="3" column="0">
+          <layout class="QHBoxLayout" name="button_layout2">
+           <item>
+            <widget class="QPushButton" name="edge_enhance">
+             <property name="text">
+              <string>Підсилення країв</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="contour">
+             <property name="text">
+              <string>Контур</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="detail">
+             <property name="text">
+              <string>Деталізація</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="gaussianBlur">
+             <property name="text">
+              <string>Розмиття за Гаусом</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="unsharp">
+             <property name="text">
+              <string>Нерізка маска</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </item>
